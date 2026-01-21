@@ -9,10 +9,11 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class Turno {
+public class Turno implements Serializable {
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
