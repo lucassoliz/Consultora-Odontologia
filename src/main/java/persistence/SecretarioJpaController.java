@@ -6,6 +6,7 @@ import jakarta.persistence.EntityManagerFactory;
 import java.io.Serializable;
 import jakarta.persistence.Query;
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.persistence.Persistence;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import java.util.List;
@@ -21,6 +22,10 @@ public class SecretarioJpaController implements Serializable {
 
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
+    }
+    
+    public SecretarioJpaController() {
+        emf = Persistence.createEntityManagerFactory("my_persistence_unit");
     }
 
     public void create(Secretario secretario) {

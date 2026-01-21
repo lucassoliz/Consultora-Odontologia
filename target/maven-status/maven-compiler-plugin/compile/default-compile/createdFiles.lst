@@ -9,6 +9,7 @@ com\mycompany\consultorioodontologia\resources\JakartaEE10Resource.class
 logica\Paciente.class
 logica\Persona.class
 logica\Horario.class
+logica\Controladora.class
 persistence\PersonaJpaController.class
 com\mycompany\consultorioodontologia\JakartaRestConfiguration.class
 persistence\OdontologoJpaController.class
@@ -18,4 +19,5 @@ logica\Secretario.class
 logica\Responsable.class
 persistence\HorarioJpaController.class
 persistence\PacienteJpaController.class
+persistence\ControladoraPersistencia.class
 persistence\ResponsableJpaController.class

@@ -1,5 +1,6 @@
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\com\mycompany\consultorioodontologia\JakartaRestConfiguration.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\com\mycompany\consultorioodontologia\resources\JakartaEE10Resource.java
+C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\logica\Controladora.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\logica\Horario.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\logica\Odontologo.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\logica\Paciente.java
@@ -8,6 +9,7 @@ C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\ja
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\logica\Secretario.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\logica\Turno.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\logica\Usuario.java
+C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\persistence\ControladoraPersistencia.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\persistence\exceptions\IllegalOrphanException.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\persistence\exceptions\NonexistentEntityException.java
 C:\Users\lucas_grgjcxq\Consultora-Odontologia\ConsultorioOdontologia\src\main\java\persistence\exceptions\PreexistingEntityException.java
