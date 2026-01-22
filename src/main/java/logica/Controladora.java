@@ -25,4 +25,8 @@ public class Controladora {
         return controlPersis.getUsuarios();
     }
 
+    public void borrarUsuario(int id) {
+        controlPersis.borrarUsuario(id);
+    }
+
 }

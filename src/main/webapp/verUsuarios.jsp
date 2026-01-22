@@ -25,8 +25,9 @@
                     <thead>
                         <tr>
                             <th>id</th>
-                            <th>Nombre</th>
+                            <th>Nombre de Usuario</th>
                             <th>Rol</th>
+                            <<th style="width: 210px">Acción</th>
 
                         </tr>
                     </thead>
@@ -35,6 +36,8 @@
                             <th>id</th>
                             <th>Nombre</th>
                             <th>Rol</th>
+                            <<th style="width: 210px">Acción</th>
+
                         </tr>
                     </tfoot>
 
@@ -49,9 +52,29 @@
                             for (Usuario usu : listaUsuarios) {
                         %>
                         <tr>
-                            <td><%=usu.getId_usuario()%></td>
+                            <td id="id_usu<%=usu.getId_usuario()%>"><%=usu.getId_usuario()%> </td>
                             <td><%=usu.getNombreUsuario()%></td>
                             <td><%=usu.getRol()%></td>
+
+
+                            <td style="display: flex; width: 230px;">
+                                <form name="eliminar" action="SvElimUsuarios" method="POST"> <!-- ESTO ES PARA MANDAR EL CODIGO AL SERVLET -->
+                                    <button type="submit" class="btn btn-primary btn-user btn-blck" style="background-color: red; margin-right: 5px;">
+                                        <i class="fas fa-trash-alt"></i> Eliminar
+                                    </button>
+                                    <input type="hidden" name="id" value="<%=usu.getId_usuario()%>">
+
+                                </form>
+                                <form name="eliminar" action="SvEditUsuarios" method="POST"> <!-- ESTO ES PARA MANDAR EL CODIGO AL SERVLET -->
+                                    <button type="submit" class="btn btn-primary btn-user btn-blck" style="margin-left:  5px;">
+                                        <i class="fas fa-pencil-alt"></i> Editar
+                                    </button>
+                                    <input type="hidden" name="id" value="<%=usu.getId_usuario()%>">
+
+                                </form>
+
+
+                            </td>
 
                         </tr>
                         <%}%>

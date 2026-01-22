@@ -6,6 +6,7 @@ com\mycompany\consultorioodontologia\resources\JakartaEE10Resource.class
 logica\Persona.class
 logica\Turno.class
 persistence\exceptions\PreexistingEntityException.class
+servlets\SvElimUsuarios.class
 persistence\HorarioJpaController.class
 persistence\PacienteJpaController.class
 persistence\TurnoJpaController.class

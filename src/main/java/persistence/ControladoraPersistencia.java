@@ -3,6 +3,7 @@ package persistence;
 import java.util.ArrayList;
 import java.util.List;
 import logica.Usuario;
+import persistence.exceptions.NonexistentEntityException;
 
 public class ControladoraPersistencia {
 
@@ -28,5 +29,13 @@ public class ControladoraPersistencia {
         
        return usuJpa.findUsuarioEntities();
 
+    }
+
+    public void borrarUsuario(int id) {
+        try {
+            usuJpa.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            System.getLogger(ControladoraPersistencia.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+        }
     }
 }
