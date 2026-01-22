@@ -13,6 +13,11 @@ public class ControladoraPersistencia {
     TurnoJpaController turnJpa = new TurnoJpaController();
     UsuarioJpaController usuJpa = new UsuarioJpaController();
 
+    public ControladoraPersistencia() {
+    }
+    
+    
+
     public void creaUsuario(Usuario usu) {
         usuJpa.create(usu);
     }

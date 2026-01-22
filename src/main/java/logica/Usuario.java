@@ -13,7 +13,7 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_usuario;
     private String nombreUsuario;
-    private String cobtrasenia;
+    private String contrasenia;
     private String rol;
 
     public Usuario() {
@@ -22,7 +22,7 @@ public class Usuario implements Serializable {
     public Usuario(int id_usuario, String nombreUsuario, String cobtrasenia, String rol) {
         this.id_usuario = id_usuario;
         this.nombreUsuario = nombreUsuario;
-        this.cobtrasenia = cobtrasenia;
+        this.contrasenia = contrasenia;
         this.rol = rol;
     }
 
@@ -43,11 +43,11 @@ public class Usuario implements Serializable {
     }
 
     public String getCobtrasenia() {
-        return cobtrasenia;
+        return contrasenia;
     }
 
-    public void setCobtrasenia(String cobtrasenia) {
-        this.cobtrasenia = cobtrasenia;
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
     }
 
     public String getRol() {
