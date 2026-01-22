@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
-  <!-- Define Persistence Unit -->
-  <persistence-unit name="my_persistence_unit">
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence 
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+             
+  <persistence-unit name="ConsultorioOdontologico_PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    
     <class>logica.Horario</class>
     <class>logica.Odontologo</class>
     <class>logica.Paciente</class>
@@ -10,16 +15,17 @@
     <class>logica.Secretario</class>
     <class>logica.Turno</class>
     <class>logica.Usuario</class>
-  </persistence-unit>
-  <persistence-unit name="ConsultorioOdontologico_PU" transaction-type="RESOURCE_LOCAL">
-    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clinica_odonto?serverTimezone=UTC"/>
-      <property name="javax.persistence.jdbc.user" value="root"/>
-      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clinica_odonto?serverTimezone=UTC"/>
+      <property name="jakarta.persistence.jdbc.user" value="root"/>
+      <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="jakarta.persistence.jdbc.password" value=""/>
+      
       <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
     </properties>
   </persistence-unit>
 </persistence>

@@ -24,11 +24,11 @@ public class Turno implements Serializable {
 
     //No tenia referencia ninguna a odontologo por lo que hacemos un atributo:
     @ManyToOne
-    @JoinColumn(name = "id_turno") //id_turno no corresponde , lo dejamos como modo de prueba pero el siguiente commit lo vamos a cambiar
+    @JoinColumn(name = "id_odonto") //FK
     private Odontologo odonto;
 
     @ManyToOne
-    @JoinColumn(name = "id_turno2")
+    @JoinColumn(name = "id_pacien")
     private Paciente pacien;
 
     public Turno() {

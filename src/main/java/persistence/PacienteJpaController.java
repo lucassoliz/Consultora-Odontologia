@@ -24,7 +24,7 @@ public class PacienteJpaController implements Serializable {
     }
 
     public PacienteJpaController() {
-        emf = Persistence.createEntityManagerFactory("my_persistence_unit");
+        emf = Persistence.createEntityManagerFactory("ConsultorioOdontologico_PU");
     }
 
     public void create(Paciente paciente) {
