@@ -22,14 +22,14 @@
                 <input type="text" class="form-control form-control-user" name="rol"
                        placeholder="Rol">
             </div>
-           
+
             <!-- ACA VA A IR TODO LO QUE RESPECTA A HORARIOS Y USUARIOS-->
         </div>
-        
+
         <button class="btn btn-primary btn-user btn-block" type="submit">
             Crear Usuario
         </button>
-    
+
     </form>
 
     <%@include file="componentes/bodyfinal.jsp" %>
