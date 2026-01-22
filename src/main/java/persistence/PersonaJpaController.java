@@ -1,4 +1,3 @@
- 
 package persistence;
 
 import jakarta.persistence.EntityManager;
@@ -13,7 +12,6 @@ import java.util.List;
 import logica.Persona;
 import persistence.exceptions.NonexistentEntityException;
 
- 
 public class PersonaJpaController implements Serializable {
 
     public PersonaJpaController(EntityManagerFactory emf) {
@@ -24,7 +22,7 @@ public class PersonaJpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
-    
+
     public PersonaJpaController() {
         emf = Persistence.createEntityManagerFactory("my_persistence_unit");
     }
@@ -132,5 +130,5 @@ public class PersonaJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

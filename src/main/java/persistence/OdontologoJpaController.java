@@ -1,4 +1,3 @@
- 
 package persistence;
 
 import jakarta.persistence.EntityManager;
@@ -12,7 +11,7 @@ import jakarta.persistence.criteria.Root;
 import java.util.List;
 import logica.Odontologo;
 import persistence.exceptions.NonexistentEntityException;
- 
+
 public class OdontologoJpaController implements Serializable {
 
     public OdontologoJpaController(EntityManagerFactory emf) {
@@ -24,10 +23,10 @@ public class OdontologoJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
-     public OdontologoJpaController() {
+    public OdontologoJpaController() {
         emf = Persistence.createEntityManagerFactory("my_persistence_unit");
     }
-    
+
     public void create(Odontologo odontologo) {
         EntityManager em = null;
         try {
@@ -131,5 +130,5 @@ public class OdontologoJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

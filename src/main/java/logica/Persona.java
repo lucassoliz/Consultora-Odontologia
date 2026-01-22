@@ -1,4 +1,3 @@
-
 package logica;
 
 import jakarta.persistence.Entity;
@@ -13,22 +12,21 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Inheritance (strategy=InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Persona implements Serializable {
-    
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String dni;
     private String nombre;
     private String apellido;
     private String telefono;
     private String direccion;
-    
+
     @Temporal(TemporalType.DATE) //para que la BD tenga formato
     private Date fecha_nac;
 
-    
     public Persona() {
     }
 
@@ -50,9 +48,6 @@ public class Persona implements Serializable {
         this.id = id;
     }
 
-
-
-        
     public String getDni() {
         return dni;
     }
@@ -100,7 +95,5 @@ public class Persona implements Serializable {
     public void setFecha_nac(Date fecha_nac) {
         this.fecha_nac = fecha_nac;
     }
-    
-     
-    
+
 }

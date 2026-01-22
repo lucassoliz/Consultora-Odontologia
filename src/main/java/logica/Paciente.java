@@ -1,4 +1,3 @@
-
 package logica;
 
 import jakarta.persistence.Entity;
@@ -9,14 +8,14 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-public class Paciente extends Persona implements Serializable{
-    
+public class Paciente extends Persona implements Serializable {
+
     //private int id_paciente;
     private boolean tiene_OS;
     private String tipoSangre;
     @OneToOne
     private Responsable unResponsable; //relacion1 1 a 1
-    @OneToMany(mappedBy="pacien")
+    @OneToMany(mappedBy = "pacien")
     private List<Turno> listaTurnos; //relacion 1 a n
 
     public Paciente() {
@@ -29,10 +28,6 @@ public class Paciente extends Persona implements Serializable{
         this.unResponsable = unResponsable;
         this.listaTurnos = listaTurnos;
     }
-
-
-
-
 
     public Responsable getUnResponsable() {
         return unResponsable;
@@ -50,16 +45,13 @@ public class Paciente extends Persona implements Serializable{
         this.listaTurnos = listaTurnos;
     }
 
-    
-
-   /* public int getId_paciente() {
+    /* public int getId_paciente() {
         return id_paciente;
     }
 
     public void setId_paciente(int id_paciente) {
         this.id_paciente = id_paciente;
     }*/
-
     public boolean isTiene_OS() {
         return tiene_OS;
     }
@@ -75,9 +67,5 @@ public class Paciente extends Persona implements Serializable{
     public void setTipoSangre(String tipoSangre) {
         this.tipoSangre = tipoSangre;
     }
-    
-    
-    
-    
-    
+
 }

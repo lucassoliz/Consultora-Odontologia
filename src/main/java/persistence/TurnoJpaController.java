@@ -1,4 +1,3 @@
- 
 package persistence;
 
 import jakarta.persistence.EntityManager;
@@ -13,7 +12,6 @@ import java.util.List;
 import logica.Turno;
 import persistence.exceptions.NonexistentEntityException;
 
- 
 public class TurnoJpaController implements Serializable {
 
     public TurnoJpaController(EntityManagerFactory emf) {
@@ -24,7 +22,7 @@ public class TurnoJpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
-    
+
     public TurnoJpaController() {
         emf = Persistence.createEntityManagerFactory("my_persistence_unit");
     }
@@ -132,5 +130,5 @@ public class TurnoJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

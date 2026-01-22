@@ -1,4 +1,3 @@
- 
 package persistence;
 
 import jakarta.persistence.EntityManager;
@@ -12,7 +11,7 @@ import jakarta.persistence.criteria.Root;
 import java.util.List;
 import logica.Responsable;
 import persistence.exceptions.NonexistentEntityException;
- 
+
 public class ResponsableJpaController implements Serializable {
 
     public ResponsableJpaController(EntityManagerFactory emf) {
@@ -23,7 +22,7 @@ public class ResponsableJpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
-    
+
     public ResponsableJpaController() {
         emf = Persistence.createEntityManagerFactory("my_persistence_unit");
     }
@@ -131,5 +130,5 @@ public class ResponsableJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

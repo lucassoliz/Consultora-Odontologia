@@ -1,4 +1,3 @@
-
 package logica;
 
 import jakarta.persistence.Entity;
@@ -14,22 +13,22 @@ import java.util.Date;
 
 @Entity
 public class Turno implements Serializable {
-    
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_turno;
     @Temporal(TemporalType.DATE)
     private Date fecha_turno;
     private String hora_turno;
     private String afeccion;
-    
+
     //No tenia referencia ninguna a odontologo por lo que hacemos un atributo:
     @ManyToOne
-    @JoinColumn(name="id_turno") //id_turno no corresponde , lo dejamos como modo de prueba pero el siguiente commit lo vamos a cambiar
+    @JoinColumn(name = "id_turno") //id_turno no corresponde , lo dejamos como modo de prueba pero el siguiente commit lo vamos a cambiar
     private Odontologo odonto;
-    
+
     @ManyToOne
-    @JoinColumn(name="id_turno2")
+    @JoinColumn(name = "id_turno2")
     private Paciente pacien;
 
     public Turno() {
@@ -73,6 +72,5 @@ public class Turno implements Serializable {
     public void setAfeccion(String afeccion) {
         this.afeccion = afeccion;
     }
-    
-    
+
 }

@@ -1,4 +1,3 @@
-
 package logica;
 
 import jakarta.persistence.Entity;
@@ -9,9 +8,9 @@ import java.io.Serializable;
 
 @Entity
 public class Usuario implements Serializable {
-    
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_usuario;
     private String nombreUsuario;
     private String cobtrasenia;
@@ -58,7 +57,5 @@ public class Usuario implements Serializable {
     public void setRol(String rol) {
         this.rol = rol;
     }
-     
-    
-    
+
 }

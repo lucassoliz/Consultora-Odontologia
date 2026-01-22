@@ -1,4 +1,3 @@
-
 package persistence;
 
 import jakarta.persistence.EntityManager;
@@ -23,7 +22,7 @@ public class PacienteJpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
-    
+
     public PacienteJpaController() {
         emf = Persistence.createEntityManagerFactory("my_persistence_unit");
     }
@@ -131,5 +130,5 @@ public class PacienteJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }

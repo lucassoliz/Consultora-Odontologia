@@ -1,4 +1,3 @@
-
 package logica;
 
 import jakarta.persistence.Entity;
@@ -9,9 +8,9 @@ import java.io.Serializable;
 
 @Entity
 public class Horario implements Serializable {
-    
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_horario;
     private String horario_incio;
     private String horario_fin;
@@ -48,7 +47,5 @@ public class Horario implements Serializable {
     public void setHorario_fin(String horario_fin) {
         this.horario_fin = horario_fin;
     }
-    
-    
-    
+
 }

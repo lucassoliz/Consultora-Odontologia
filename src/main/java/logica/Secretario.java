@@ -1,4 +1,3 @@
-
 package logica;
 
 import jakarta.persistence.Entity;
@@ -6,8 +5,8 @@ import jakarta.persistence.OneToOne;
 import java.util.Date;
 
 @Entity
-public class Secretario extends Persona{
-    
+public class Secretario extends Persona {
+
     //private int id_secretario;
     private String sector;
     @OneToOne
@@ -22,10 +21,6 @@ public class Secretario extends Persona{
         this.unUsuario = unUsuario;
     }
 
-
-
-    
-
     /*public int getId_secretario() {
         return id_secretario;
     }
@@ -33,7 +28,6 @@ public class Secretario extends Persona{
     public void setId_secretario(int id_secretario) {
         this.id_secretario = id_secretario;
     }*/
-
     public String getSector() {
         return sector;
     }
@@ -49,6 +43,5 @@ public class Secretario extends Persona{
     public void setUnUsuario(Usuario unUsuario) {
         this.unUsuario = unUsuario;
     }
-    
-    
+
 }

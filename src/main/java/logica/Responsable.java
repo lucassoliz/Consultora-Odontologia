@@ -1,12 +1,11 @@
-
 package logica;
 
 import jakarta.persistence.Entity;
 import java.util.Date;
 
 @Entity
-public class Responsable extends Persona{
-    
+public class Responsable extends Persona {
+
     //private int id_responsable;
     private String tipo_resp;
 
@@ -18,18 +17,13 @@ public class Responsable extends Persona{
         this.tipo_resp = tipo_resp;
     }
 
-
-
-
-
-   /* public int getId_responsable() {
+    /* public int getId_responsable() {
         return id_responsable;
     }
 
     public void setId_responsable(int id_responsable) {
         this.id_responsable = id_responsable;
     }*/
-
     public String getTipo_resp() {
         return tipo_resp;
     }
@@ -37,7 +31,5 @@ public class Responsable extends Persona{
     public void setTipo_resp(String tipo_resp) {
         this.tipo_resp = tipo_resp;
     }
-    
-    
-    
+
 }

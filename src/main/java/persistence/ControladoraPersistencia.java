@@ -1,10 +1,9 @@
- 
 package persistence;
 
 import logica.Usuario;
 
 public class ControladoraPersistencia {
-    
+
     HorarioJpaController horaJpa = new HorarioJpaController();
     OdontologoJpaController odontoJpa = new OdontologoJpaController();
     PacienteJpaController pacJpa = new PacienteJpaController();
