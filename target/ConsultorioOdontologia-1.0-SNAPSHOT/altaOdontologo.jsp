@@ -8,40 +8,42 @@
     <p>Esto es una prueba</p>
 
     <form class="user">
-        <div class="form-group row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                       placeholder="First Name">
+        <div class="form-group col">
+            <div class="col-sm-6 mb-3 ">
+                <input type="text" class="form-control form-control-user" id="din"
+                       placeholder="DNI">
             </div>
-            <div class="col-sm-6">
-                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                       placeholder="Last Name">
+            <div class="col-sm-6 mb-3">
+                <input type="text" class="form-control form-control-user" id="nombre"
+                       placeholder="Nombre">
             </div>
+            <div class="col-sm-6 mb-3">
+                <input type="text" class="form-control form-control-user" id="apellido"
+                       placeholder="Apellido">
+            </div>
+            <div class="col-sm-6 mb-3">
+                <input type="text" class="form-control form-control-user" id="telefono"
+                       placeholder="Teléfono">
+            </div>
+            <div class="col-sm-6 mb-3">
+                <input type="text" class="form-control form-control-user" id="direccion"
+                       placeholder="Dirección">
+            </div>
+            <div class="col-sm-6 mb-3">
+                <input type="text" class="form-control form-control-user" id="fechanac"
+                       placeholder="Fecha Nac">
+            </div>
+            <div class="col-sm-6 mb-3">
+                <input type="text" class="form-control form-control-user" id="especialidad"
+                       placeholder="Especialidad">
+            </div>
+            <!-- ACA VA A IR TODO LO QUE RESPECTA A HORARIOS Y USUARIOS-->
         </div>
-        <div class="form-group">
-            <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                   placeholder="Email Address">
-        </div>
-        <div class="form-group row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <input type="password" class="form-control form-control-user"
-                       id="exampleInputPassword" placeholder="Password">
-            </div>
-            <div class="col-sm-6">
-                <input type="password" class="form-control form-control-user"
-                       id="exampleRepeatPassword" placeholder="Repeat Password">
-            </div>
-        </div>
-        <a href="login.html" class="btn btn-primary btn-user btn-block">
-            Register Account
+        
+        <a href="" class="btn btn-primary btn-user btn-block">
+            Crear Odontólogo
         </a>
-        <hr>
-        <a href="index.html" class="btn btn-google btn-user btn-block">
-            <i class="fab fa-google fa-fw"></i> Register with Google
-        </a>
-        <a href="index.html" class="btn btn-facebook btn-user btn-block">
-            <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-        </a>
+    
     </form>
 
     <%@include file="componentes/bodyfinal.jsp" %>
