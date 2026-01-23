@@ -65,7 +65,7 @@
                                     <input type="hidden" name="id" value="<%=usu.getId_usuario()%>">
 
                                 </form>
-                                <form name="eliminar" action="SvEditUsuarios" method="POST"> <!-- ESTO ES PARA MANDAR EL CODIGO AL SERVLET -->
+                                <form name="eliminar" action="SvEditUsuarios" method="GET"> <!-- ESTO ES PARA MANDAR EL CODIGO AL SERVLET -->
                                     <button type="submit" class="btn btn-primary btn-user btn-blck" style="margin-left:  5px;">
                                         <i class="fas fa-pencil-alt"></i> Editar
                                     </button>

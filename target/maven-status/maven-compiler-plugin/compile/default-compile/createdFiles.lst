@@ -2,6 +2,7 @@ persistence\SecretarioJpaController.class
 logica\Usuario.class
 persistence\UsuarioJpaController.class
 persistence\exceptions\IllegalOrphanException.class
+servlets\SvEditUsuarios.class
 com\mycompany\consultorioodontologia\resources\JakartaEE10Resource.class
 logica\Persona.class
 logica\Turno.class

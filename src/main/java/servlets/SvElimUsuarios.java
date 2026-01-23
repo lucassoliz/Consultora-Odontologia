@@ -38,7 +38,7 @@ public class SvElimUsuarios extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id")); //hacemos el casteo
         
         control.borrarUsuario(id);
-        response.sendRedirect("verUsuarios.jsp");
+        response.sendRedirect("SvUsuarios");
         
     }
 

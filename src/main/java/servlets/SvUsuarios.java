@@ -44,7 +44,7 @@ public class SvUsuarios extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //guardamos las variables que obtuvimos en variables de java
-        String nombreUsuario = request.getParameter("nombreusu");
+        String nombreUsuario = request.getParameter("nombreuso");
         String contra = request.getParameter("contrasenia");
         String rol = request.getParameter("rol");
 
