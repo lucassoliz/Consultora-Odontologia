@@ -13,6 +13,7 @@ persistence\PacienteJpaController.class
 persistence\TurnoJpaController.class
 logica\Odontologo.class
 persistence\exceptions\NonexistentEntityException.class
+servlets\SvLogin.class
 logica\Paciente.class
 logica\Horario.class
 logica\Controladora.class

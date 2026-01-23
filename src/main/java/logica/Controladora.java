@@ -36,4 +36,26 @@ public class Controladora {
         controlPersis.editarUsuario(usu);
     }
 
+    public boolean comprobarIngreso(String usuario, String contrasenia) {
+        //ejemplo basico de validacion/ existe mejores alternativas
+        
+        boolean ingreso = false;
+        
+        List<Usuario> listaUsuarios = new ArrayList<Usuario>();
+        listaUsuarios = controlPersis.getUsuarios();
+        
+        for(Usuario usu : listaUsuarios){
+            if(usu.getNombreUsuario().equals(usuario)){
+                if(usu.getCobtrasenia().equals(contrasenia)){
+                    ingreso = true;
+                }
+            }
+            else{
+                ingreso = false;
+            }
+            
+        }
+        return ingreso;
+    }
+
 }
